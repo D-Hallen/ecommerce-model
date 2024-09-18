@@ -1,3 +1,5 @@
+'use client '
+
 import { Dropdown } from "flowbite"
 import Icon from "@mdi/react"
 
@@ -12,7 +14,7 @@ export default function DropdownComponent (props) {
                 <span className={props.subDrop ? "" : "font-semibold text-gray-700"}>{props.text}</span>
             </button>
     
-            <div id={props.id} className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <div id={props.id} className="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby={props.id+'Button'}>
                     {props.children}
                 </ul>

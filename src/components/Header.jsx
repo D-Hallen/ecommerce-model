@@ -10,8 +10,8 @@ export default function Header() {
         <header className="flex flex-row w-full items-center border-b-2 h-14">
         <div className="flex flex-row items-center pr-3">
           <Image src="/favicon.ico" alt="Vercel Logo" width={32} height={16} className="m-2"/>  
-          <a href="/" className="mx-3 font-black text-xl">E-Commerce</a>
-          <DropdownMenu/>
+          <a href="/" className="mx-3 font-black lg:text-xl sm:text-sm">E-Commerce</a>
+          <DropdownMenu className="z-10"/>
         </div> 
         <div className="flex flex-row bg-slate-200 flex-1 rounded-xl mx-2">
           <input type="text" placeholder="Search..." className="flex-1 bg-slate-200 border-0 m-1" />
