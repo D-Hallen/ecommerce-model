@@ -1,4 +1,5 @@
 import Item from "./Item"
+import CarouselComponent from "./Carousel/Carousel"
 
 export default function Body (){
     const itemTeste = {
@@ -12,6 +13,7 @@ export default function Body (){
 
     return (
         <main className="top-5 flex-1">
+            <CarouselComponent/>
             <div className="w-11/12 mx-auto my-10 grid grid-cols-5 gap-2">
                 <Item item = {itemTeste}/>
                 <Item item = {itemTeste}/>
