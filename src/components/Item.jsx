@@ -1,11 +1,17 @@
 'use client'
 import Image from "next/image"
+import { useSearchParams } from "next/navigation"
 
 export default function Item(props) {
+
+    const searchParams = useSearchParams()
     const item = props.item
 
     const navigate = () => {
-        window.location.href = `/product/${item.id}`
+        const params = new URLSearchParams(searchParams.toString())
+        params.set('id', item.id)
+        window.history.pushState(null, '', `?${params.toString()}`)
+        window.location.href = `/product-${item.id}`
     }
     return (
         <button onClick={navigate} className="grid-cols-1 bg-white w-48 shadow-lg py-3 
