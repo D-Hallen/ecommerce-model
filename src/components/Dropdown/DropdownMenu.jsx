@@ -1,4 +1,3 @@
-import { Dropdown } from "flowbite"
 import { mdiMenu } from "@mdi/js"
 import DropdownItem from "./DropdownItem"
 import DropdownComponent from './DropdownComponent'
