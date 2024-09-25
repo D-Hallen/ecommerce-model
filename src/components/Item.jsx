@@ -15,7 +15,7 @@ export default function Item(props) {
     }
     return (
         <button onClick={navigate} className="grid-cols-1 bg-white w-48 shadow-lg py-3 
-        px-2 box-content hover:shadow-2xl rounded-xl hover:text-blue-500">
+        px-2 box-content border border-slate-200 hover:shadow-2xl rounded-xl hover:text-blue-500">
             <Image src={`/imgs/${item.img}`} alt={item.name} width={200} height={200}/>
             <p className="text-left">{item.name}</p>
             {

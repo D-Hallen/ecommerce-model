@@ -14,7 +14,7 @@ export default function Header() {
           <Image src="/favicon.ico" alt="Vercel Logo" width={32} height={16} className="m-2" />
           E-Commerce
         </a>
-        <DropdownMenu className="z-10" />
+        <DropdownMenu className="z-10" />/
       </div>
       <div className="flex flex-row bg-slate-200 flex-1 rounded-xl mx-2">
         <input type="text" placeholder="Search..." className="flex-1 bg-slate-200 border-0 m-1" />
